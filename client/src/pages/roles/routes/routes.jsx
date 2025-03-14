@@ -18,7 +18,7 @@ const CreateRoute = () => {
   useEffect(() => {
     const fetchRoutes = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/routes");
+        const response = await axios.get("https://iam-2qmv.onrender.com/api/routes");
         setRoutes(response.data);
       } catch (error) {
         console.error("Error fetching routes:", error);
@@ -37,13 +37,13 @@ const CreateRoute = () => {
 
     try {
       if (isEditing) {
-        await axios.put(`http://localhost:4000/api/routes/${editRouteId}`, {
+        await axios.put(`https://iam-2qmv.onrender.com/api/routes/${editRouteId}`, {
           path: routePath,
           name: routeName,
         });
         toast.success("Route updated successfully!");
       } else {
-        const response = await axios.post(`http://localhost:4000/api/routes`, {
+        const response = await axios.post(`https://iam-2qmv.onrender.com/api/routes`, {
           path: routePath,
           name: routeName,
         });
@@ -67,7 +67,7 @@ const CreateRoute = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/routes/${id}`);
+      await axios.delete(`https://iam-2qmv.onrender.com/api/routes/${id}`);
       setRoutes(routes.filter((route) => route._id !== id));
       toast.success("Route deleted successfully!");
     } catch (error) {
