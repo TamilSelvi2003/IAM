@@ -19,7 +19,7 @@ const RoleManagement = () => {
   useEffect(() => {
     const fetchRoutes = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/routes`);
+        const response = await axios.get(`https://iam-2qmv.onrender.com/api/routes`);
         setAvailableRoutes(response.data);
       } catch (error) {
         console.error("Error fetching routes:", error);
@@ -31,7 +31,7 @@ const RoleManagement = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/roles`);
+        const response = await axios.get(`https://iam-2qmv.onrender.com/api/roles`);
         setRoles(response.data);
       } catch (error) {
         console.error("Error fetching roles:", error);
@@ -57,14 +57,14 @@ const RoleManagement = () => {
   
     try {
       if (editingRoleId) {
-        await axios.put(`http://localhost:4000/api/roles/${editingRoleId}`, roleData);
+        await axios.put(`https://iam-2qmv.onrender.com/api/roles/${editingRoleId}`, roleData);
         toast.success("Role updated successfully!");
       } else {
-        await axios.post(`http://localhost:4000/api/roles`, roleData);
+        await axios.post(`https://iam-2qmv.onrender.com/api/roles`, roleData);
         toast.success("Role added successfully!");
       }
   
-      const updatedRoles = await axios.get(`http://localhost:4000/api/roles`);
+      const updatedRoles = await axios.get(`https://iam-2qmv.onrender.com/api/roles`);
       setRoles(updatedRoles.data);
   
       setRoleName("");
@@ -80,8 +80,8 @@ const RoleManagement = () => {
   
   const handleDeleteRole = async (roleId) => {
     try {
-      await axios.delete(`http://localhost:4000/api/roles/${roleId}`);
-      const updatedRoles = await axios.get(`http://localhost:4000/api/roles`);
+      await axios.delete(`https://iam-2qmv.onrender.com/api/roles/${roleId}`);
+      const updatedRoles = await axios.get(`https://iam-2qmv.onrender.com/api/roles`);
       setRoles(updatedRoles.data);
       toast.success("Role deleted successfully!");
     } catch (error) {
