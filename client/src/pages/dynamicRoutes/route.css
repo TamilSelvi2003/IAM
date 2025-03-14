@@ -1,0 +1,64 @@
+.cash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cash h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .cashbtn {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .cashbtn:hover {
+    background-color: rgb(167, 117, 26);
+  }
+  
+  .unauthorized-container {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  
+  .unauthorized-container h1 {
+    font-size: 2rem;
+    color: #d32f2f;  
+  }
+  
+  .unauthorized-container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .unauthorized-btn {
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .unauthorized-btn:hover {
+    background-color: red;
+  }
+  

@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+}
+
+  
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  

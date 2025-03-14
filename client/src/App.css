@@ -1,0 +1,145 @@
+  /* .admin-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-btn {
+    padding:4px 8px ;
+    border: none;
+    border-radius: 4px;
+    background-color: orange;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: -5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .table-btn:hover {
+    background-color: rgb(175, 118, 12);
+  }
+
+.logout-btn, .admin-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover, .admin-btn:hover {
+  background-color: #0056b3;
+}
+
+  
+  .user-card h2, .guest-card h2 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .user-card .logout-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .user-card .logout-btn:hover {
+    background-color: orange;
+  }
+ 
+@media (max-width: 768px) {
+  .login-container,
+  .register-container,
+  .admin-container {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  .register-container input[type="text"],
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .log-btn, .table-btn, .logout-btn, .admin-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .login-container,
+  .register-container,
+  .admin-container {
+    max-width: 70%;
+    padding: 15px;
+  }
+  input[type="email"],
+  input[type="password"],
+  .register-container input[type="text"],
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    font-size: 14px;
+  padding: 5px;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  .login-container input[type="password"] {
+    font-size: 14px;
+    padding:  5px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+} */
