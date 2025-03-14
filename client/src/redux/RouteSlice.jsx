@@ -6,7 +6,7 @@ export const fetchRoutes = createAsyncThunk(
   "routes/fetchRoutes",
   async (role, { rejectWithValue }) => {
     try {
-      const response = await axios.get(`http://localhost:4000/api/roles?role=${role}`);
+      const response = await axios.get(`https://iam-2qmv.onrender.com/api/roles?role=${role}`);
       console.log("Fetched Routes:", response.data);
  
       const roleData = response.data.find((r) => r.role === role);
